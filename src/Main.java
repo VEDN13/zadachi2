@@ -21,6 +21,7 @@ public class Main {
 //        int a = in.nextInt();
 //        System.out.println("Введите значение b");
 //        int b = in.nextInt();
+//        in.close();
 //        System.out.println(task1(a, b));
 //    }
 //---------------------------------------------------------------------
@@ -45,6 +46,7 @@ public class Main {
 //        int a = in.nextInt();
 //        System.out.println("Введите значение b");
 //        int b = in.nextInt();
+//        in.close();
 //        System.out.println(task2(a, b));
 //    }
 //---------------------------------------------------------------------
@@ -68,6 +70,7 @@ public class Main {
 //            Scanner in = new Scanner(System.in);
 //            System.out.println("Введите строку");
 //            String a = in.nextLine();
+//            in.close();
 //            System.out.println(task3(a));
 //        }
 //---------------------------------------------------------------------
@@ -90,6 +93,7 @@ public class Main {
 //        Scanner in = new Scanner(System.in);
 //        System.out.println("Введите возраст");
 //        int a = in.nextInt();
+//        in.close();
 //        System.out.println(task4(a));
 //    }
 //---------------------------------------------------------------------
@@ -107,27 +111,92 @@ public class Main {
             throw new IllegalArgumentException("Возраст не может быть меньше нуля или более 150");
         }
     }
+//    public static void main(String[] args)
+//    {
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Введите возраст");
+//        int a = in.nextInt();
+//        in.close();
+//        System.out.println(task5(a));
+//    }
+//---------------------------------------------------------------------
+
+    //Задача 6
+//---------------------------------------------------------------------
+    public static int task6(int input)
+    {
+        if (input > 0)
+        {
+            int fak = 1;
+            for (int i = input; i >= 1; i--)
+            {
+                fak *= i;
+            }
+            return fak;
+        }
+        else
+        {
+            throw new ArithmeticException();
+        }
+    }
+//    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Введите число");
+//        int a = in.nextInt();
+//        in.close();
+//        System.out.println(task6(a));
+//
+//    }
+//---------------------------------------------------------------------
+
+    //Задача 7
+//---------------------------------------------------------------------
+
+        //        7. Проверка массива на нули
+//        Создайте функцию, которая проверяет массив на наличие нулей. Если в массиве есть нули, выбрасывайте исключение.
+//---------------------------------------------------------------------
+
+        //Задача 8
+//---------------------------------------------------------------------
+        public static double task8(int a, int b)
+        {
+         if (b > 0)
+         {
+             return Math.pow(a, b);
+         }
+         else
+         {
+             throw new IllegalArgumentException();
+         }
+        }
+//        public static void main(String[] args) {
+//            Scanner in = new Scanner(System.in);
+//            System.out.println("Введите число");
+//            int a = in.nextInt();
+//            System.out.println("Введите степень");
+//            int b = in.nextInt();
+//            in.close();
+//            System.out.println(task8(a, b));
+//        }
+//---------------------------------------------------------------------
+
+    //Задача 9
+//---------------------------------------------------------------------
+    public static double task9(String a, int b)
+    {
+        return 0;
+    }
+
     public static void main(String[] args)
     {
-    Scanner in = new Scanner(System.in);
-    System.out.println("Введите возраст");
-    int a = in.nextInt();
-    System.out.println(task5(a));
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите строку");
+        String a = in.nextLine();
+        System.out.println("Введите число");
+        int b = in.nextInt();
+        in.close();
+        System.out.println(task9(a, b));
 
-
-
-//        5. Нахождение корня
-//        Реализуйте функцию, которая находит корень из числа. Если число отрицательное, выбрасывайте IllegalArgumentException.
-//
-//        6. Факториал
-//        Напишите функцию, которая вычисляет факториал числа. Если число отрицательное, выбрасывайте исключение.
-//
-//        7. Проверка массива на нули
-//        Создайте функцию, которая проверяет массив на наличие нулей. Если в массиве есть нули, выбрасывайте исключение.
-//
-//        8. Калькулятор возведения в степень
-//        Реализуйте функцию, которая возводит число в степень. Если степень отрицательная, выбрасывайте исключение.
-//
 //        9. Обрезка строки
 //        Напишите функцию, которая принимает строку и число символов. Функция должна возвращать строку, обрезанную до указанного числа символов. Если число символов больше длины строки, выбрасывайте исключение.
 //
