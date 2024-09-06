@@ -115,6 +115,7 @@ public class Main {
     System.out.println(task5(a));
 
 
+
 //        5. Нахождение корня
 //        Реализуйте функцию, которая находит корень из числа. Если число отрицательное, выбрасывайте IllegalArgumentException.
 //
